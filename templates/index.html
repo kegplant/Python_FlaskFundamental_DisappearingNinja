@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>Disappearing Ninja</title>
+        <style>
+            label{
+                display:block;
+            }
+        </style>
+        <!-- <link rel="stylesheet" href={{url_for('static',filename='style.css')}}> -->
+    </head>
+    <body>
+        {%if image=="all"%}
+        <img src={{url_for('static', filename='images/tmnt.png')}} alt="no ninjas here">
+        {%endif%}
+        {%if image=="leo"%}
+        <img src={{url_for('static', filename='images/leonardo.jpg')}} alt="no ninjas here">
+        {%endif%}
+        {%if image=="don"%}
+        <img src={{url_for('static', filename='images/donatello.jpg')}} alt="no ninjas here">
+        {%endif%}
+    </body>
+</html>
